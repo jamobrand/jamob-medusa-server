@@ -1,0 +1,57 @@
+// CORS when consuming Medusa from admin
+const ADMIN_CORS = process.env.ADMIN_CORS
+
+// CORS to avoid issues when consuming Medusa from a client
+const STORE_CORS = process.env.STORE_CORS
+
+// Database URL (here we use a local database called medusa-development)
+const DATABASE_URL = process.env.DATABASE_URL
+
+// Medusa uses Redis, so this needs configuration as well
+const REDIS_URL = process.env.REDIS_URL
+
+// Stripe keys
+const STRIPE_API_KEY = process.env.STRIPE_API_KEY
+const STRIPE_WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET
+
+const ACCESS_KEY_ID = process.env.ACCESS_KEY_ID
+const SECRET_ACCESS_KEY = process.env.SECRET_ACCESS_KEY
+
+// This is the place to include plugins. See API documentation for a thorough guide on plugins.
+const plugins = [
+  `medusa-fulfillment-manual`,
+  `medusa-payment-manual`,
+  {
+    resolve: `medusa-file-s3`,
+    options: {
+      s3_url: "https://jamob-medusa.s3.ap-south-1.amazonaws.com",
+      bucket: "jamob-medusa",
+      region: "ap-south-1",
+      access_key_id: ACCESS_KEY_ID,
+      secret_access_key: SECRET_ACCESS_KEY,
+    },
+  },
+  // Uncomment to add Stripe support.
+  // You can create a Stripe account via: https://stripe.com
+  // {
+  //   resolve: `medusa-payment-stripe`,
+  //   options: {
+  //     api_key: STRIPE_API_KEY,
+  //     webhook_secret: STRIPE_WEBHOOK_SECRET,
+  //   },
+  // },
+]
+
+module.exports = {
+  projectConfig: {
+    redis_url: REDIS_URL,
+    // For more production-like environment install PostgresQL
+    database_url: DATABASE_URL,
+    database_type: "postgres",
+    // database_database: "./medusa-db.sql",
+    // database_type: "sqlite",
+    store_cors: STORE_CORS,
+    admin_cors: ADMIN_CORS,
+  },
+  plugins,
+}
