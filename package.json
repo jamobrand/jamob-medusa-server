@@ -5,6 +5,7 @@
   "author": "Sebastian Rindom <skrindom@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "seed": "medusa seed -f ./data/seed.json",
     "serve": "medusa start",
     "start": "medusa migrations run && medusa develop",
     "build": "babel src -d dist --extensions \".ts,.js\""
