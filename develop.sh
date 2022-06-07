@@ -6,6 +6,4 @@
 #Start development environment
 # medusa develop
 
-medusa migrations run
-
-medusa $1
+medusa start
