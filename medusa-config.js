@@ -39,8 +39,8 @@ const plugins = [
   {
     resolve: `medusa-file-s3`,
     options: {
-      s3_url: "https://jamob-medusa.s3.ap-south-1.amazonaws.com",
-      bucket: "jamob-medusa",
+      s3_url: "https://jamobrand-medusa.s3.ap-south-1.amazonaws.com",
+      bucket: "jamobrand-medusa",
       region: "ap-south-1",
       access_key_id: ACCESS_KEY_ID,
       secret_access_key: SECRET_ACCESS_KEY,
