@@ -46,6 +46,29 @@ const plugins = [
       secret_access_key: SECRET_ACCESS_KEY,
     },
   },
+  {
+    resolve: `medusa-plugin-meilisearch`,
+    options: {
+      config: {
+        host: process.env.MEILISEARCH_HOST,
+        apiKey: process.env.MEILISEARCH_API_KEY,
+      },
+      settings: {
+        products: {
+          searchableAttributes: ["title", "description", "variant_sku"],
+          displayedAttributes: ["title", "description", "variant_sku"],
+        },
+      },
+    },
+  },
+  {
+    resolve: `medusa-plugin-sendgrid`,
+    options: {
+      api_key: process.env.SENDGRID_API_KEY,
+      from: process.env.SENDGRID_FROM,
+      order_placed_template: "d-1dca7bd98f464598aafbdcb5e312d1df",
+    },
+  },
   // Uncomment to add Stripe support.
   // You can create a Stripe account via: https://stripe.com
   // {

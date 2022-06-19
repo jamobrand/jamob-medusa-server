@@ -1334,6 +1334,29 @@
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-1.0.4.tgz#b740f68609dfae8aa71c3a6cab15d816407ba493"
   integrity sha512-60CHpq+eqnTxLZQ4PGHYNwUX572hgpMHGPtTWMjdTMsAvlm69lZV/4ly6O3sAYkomo4NggGcomrDpBe34rxUqw==
 
+"@sendgrid/client@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/client/-/client-7.7.0.tgz#f8f67abd604205a0d0b1af091b61517ef465fdbf"
+  integrity sha512-SxH+y8jeAQSnDavrTD0uGDXYIIkFylCo+eDofVmZLQ0f862nnqbC3Vd1ej6b7Le7lboyzQF6F7Fodv02rYspuA==
+  dependencies:
+    "@sendgrid/helpers" "^7.7.0"
+    axios "^0.26.0"
+
+"@sendgrid/helpers@^7.7.0":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/helpers/-/helpers-7.7.0.tgz#93fb4b6e2f0dc65080440d6a784cc93e8e148757"
+  integrity sha512-3AsAxfN3GDBcXoZ/y1mzAAbKzTtUZ5+ZrHOmWQ279AuaFXUNCh9bPnRpN504bgveTqoW+11IzPg3I0WVgDINpw==
+  dependencies:
+    deepmerge "^4.2.2"
+
+"@sendgrid/mail@^7.1.1":
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@sendgrid/mail/-/mail-7.7.0.tgz#aba09f5ce2e9d8ceee92284c3ea8b4a90b0e38fe"
+  integrity sha512-5+nApPE9wINBvHSUxwOxkkQqM/IAAaBYoP9hw7WwgDNQPxraruVqHizeTitVtKGiqWCKm2mnjh4XGN3fvFLqaw==
+  dependencies:
+    "@sendgrid/client" "^7.7.0"
+    "@sendgrid/helpers" "^7.7.0"
+
 "@sideway/address@^4.1.3":
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
@@ -1597,6 +1620,13 @@ axios@^0.21.1:
   integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
   dependencies:
     follow-redirects "^1.14.0"
+
+axios@^0.26.0:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
+  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
+  dependencies:
+    follow-redirects "^1.14.8"
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
@@ -2265,6 +2295,13 @@ cron-parser@^3.5.0:
     is-nan "^1.3.2"
     luxon "^1.26.0"
 
+cross-fetch@^3.1.4:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
+  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+  dependencies:
+    node-fetch "2.6.7"
+
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -2327,6 +2364,11 @@ decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==
+
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
 
 defaults@^1.0.3:
   version "1.0.3"
@@ -2712,7 +2754,7 @@ fn.name@1.x.x:
   resolved "https://registry.yarnpkg.com/fn.name/-/fn.name-1.1.0.tgz#26cad8017967aea8731bc42961d04a3d5988accc"
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
 
-follow-redirects@^1.14.0:
+follow-redirects@^1.14.0, follow-redirects@^1.14.8:
   version "1.15.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
   integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
@@ -3734,6 +3776,29 @@ medusa-payment-stripe@1.1.38:
     medusa-core-utils "^1.1.31"
     stripe "^8.50.0"
 
+medusa-plugin-meilisearch@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/medusa-plugin-meilisearch/-/medusa-plugin-meilisearch-0.2.1.tgz#7c2889014a829957d435f3d1f3e1f9b7d91d781f"
+  integrity sha512-X6fiwLz/aoNFS0bj+Q34PGg49AkpugsM0ifSSYq167B5zD8+6annc2jrC7yAdU7FMYSIoEaBA/w/GSCGJz4mCg==
+  dependencies:
+    body-parser "^1.19.0"
+    lodash "^4.17.21"
+    medusa-core-utils "^1.1.31"
+    medusa-interfaces "^1.3.0"
+    meilisearch "^0.24.0"
+
+medusa-plugin-sendgrid@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/medusa-plugin-sendgrid/-/medusa-plugin-sendgrid-1.3.1.tgz#2ad884c64a187f63bfd7569b0933780cd1363d8a"
+  integrity sha512-f4/QbDUXtfjZziM5zxhdR0RPbK4cD6C+EtnJsM1D2rNEECK44xY7zrpBefE6zOYroCuKiqE0YV12ucNSKAZ2rA==
+  dependencies:
+    "@babel/plugin-transform-classes" "^7.9.5"
+    "@sendgrid/mail" "^7.1.1"
+    body-parser "^1.19.0"
+    express "^4.17.1"
+    medusa-core-utils "^1.1.31"
+    medusa-test-utils "^1.1.37"
+
 medusa-telemetry@^0.0.11:
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/medusa-telemetry/-/medusa-telemetry-0.0.11.tgz#1d80b0e3d73b456fae243027c65cd6c212584971"
@@ -3757,6 +3822,13 @@ medusa-test-utils@^1.1.37:
     "@babel/plugin-transform-classes" "^7.9.5"
     medusa-core-utils "^1.1.31"
     randomatic "^3.1.1"
+
+meilisearch@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.24.0.tgz#a71454baac058f502b931af17069ab676fbaced6"
+  integrity sha512-qME1dsHZePBQi8qFdhbilcFzaL+oZJgUuls+FZ23hHpdhJI+iMFSmjjcfsxq5hdg2qczbCXv7yAo3Sh8xgfkgA==
+  dependencies:
+    cross-fetch "^3.1.4"
 
 memory-pager@^1.0.2:
   version "1.5.0"
@@ -4054,7 +4126,7 @@ node-addon-api@^4.2.0:
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-4.3.0.tgz#52a1a0b475193e0928e98e0426a0d1254782b77f"
   integrity sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==
 
-node-fetch@^2.6.7:
+node-fetch@2.6.7, node-fetch@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
