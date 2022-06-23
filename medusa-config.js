@@ -69,6 +69,14 @@ const plugins = [
       order_placed_template: "d-1dca7bd98f464598aafbdcb5e312d1df",
     },
   },
+  {
+    resolve: `medusa-plugin-slack-notification`,
+    options: {
+      show_discount_code: false,
+      slack_url: process.env.SLACK_WEBHOOK_URL,
+      admin_orders_url: process.env.ADMIN_ORDERS_URL,
+    },
+  },
   // Uncomment to add Stripe support.
   // You can create a Stripe account via: https://stripe.com
   // {
