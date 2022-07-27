@@ -55,8 +55,20 @@ const plugins = [
       },
       settings: {
         products: {
-          searchableAttributes: ["title", "description", "variant_sku"],
-          displayedAttributes: ["title", "description", "variant_sku"],
+          searchableAttributes: ["title", "description"],
+          displayedAttributes: [
+            "title",
+            "description",
+            "handle",
+            "thumbnail",
+            "variants",
+            "variant_sku",
+            "variant_options_value",
+            "options",
+            "collection_title",
+            "collection_handle",
+            "images",
+          ],
         },
       },
     },
