@@ -1148,10 +1148,10 @@
     "winston" "^3.3.3"
     "yargs" "^15.3.1"
 
-"@medusajs/medusa@^1.3.4":
-  "integrity" "sha512-F2jroWMVL6OZHkqwZ54vkcn2yt70pfCwSbjV4cQ51GV2beN+oWyQ6kovye/YoSa1JjIxJrnCqHK3Z/Y23J57pQ=="
-  "resolved" "https://registry.npmjs.org/@medusajs/medusa/-/medusa-1.3.4.tgz"
-  "version" "1.3.4"
+"@medusajs/medusa@^1.3.5":
+  "integrity" "sha512-jLAdK9DodN3EP5aaMcTAeio3K+IMi990dt3t8SxgveJzzPPL7nY1FsGZ0mIyQgGEyvOWlF+rVDTYznaB2HCbPQ=="
+  "resolved" "https://registry.npmjs.org/@medusajs/medusa/-/medusa-1.3.5.tgz"
+  "version" "1.3.5"
   dependencies:
     "@hapi/joi" "^16.1.8"
     "@medusajs/medusa-cli" "^1.3.1"
@@ -3795,10 +3795,10 @@
     "express" "^4.17.1"
     "medusa-core-utils" "^1.1.31"
 
-"medusa-interfaces@^1.3.0", "medusa-interfaces@^1.3.1", "medusa-interfaces@1.x":
-  "integrity" "sha512-zmCNylQxQpy1s0Jb8kqOBUzOZAQwc6LbYBdPdgvoB8LzGmkyJ3tle5yrCV+f5d8FIk4PhK0zdTNwAK1os1giDg=="
-  "resolved" "https://registry.npmjs.org/medusa-interfaces/-/medusa-interfaces-1.3.1.tgz"
-  "version" "1.3.1"
+"medusa-interfaces@^1.3.0", "medusa-interfaces@^1.3.2", "medusa-interfaces@1.3.2", "medusa-interfaces@1.x":
+  "integrity" "sha512-UVi8NiYtv8JzSvJiPHTXfsqW1UBNkBaogIqgr6FYDpHvvuFLJ20aFew2MRUa/TYPgLKTa7KI6QoeKvZH1krgPg=="
+  "resolved" "https://registry.npmjs.org/medusa-interfaces/-/medusa-interfaces-1.3.2.tgz"
+  "version" "1.3.2"
 
 "medusa-payment-manual@1.0.16":
   "integrity" "sha512-Oxmz3qCZ9b+tCI7TTC1Z6vOFJU8kiSZylxvoN+j8FuqIdtdZepAwSyxYpUB/IDMEbpRmZlFXp2rY4653qT1Mnw=="
